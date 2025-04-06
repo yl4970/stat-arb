@@ -1,6 +1,17 @@
 ## Latency Arbitrage Signal Processing with NBBO
 
-This project identifies potential latency arbitrage opportunities using high-frequency order flow data and NBBO quotes. It preprocesses and filters the dataset to extract signals based on stale quote detection and quote imbalance across exchanges.
-The core logic is modular and extensible for analyzing market microstructure patterns.
+This repository contains a data processing pipeline designed to identify latency arbitrage opportunities in NBBO (National Best Bid and Offer) quote data across exchanges. The current implementation parses raw quote streams, applies market hours and action filters, reshapes bid/ask data, and detects cross-exchange mispricings under latency and transaction cost constraints.
 
-Next Step: Implement a P&L engine to simulate execution and quantify strategy performance.
+### Next Steps
+* Implemented: Arbitrage signal detection
+* Coming up: PnL generation using these signals
+* Trade simulation logic
+* lippage modeling
+* Realized vs. theoretical PnL comparison
+
+### File Structure (Coming Soon)
+latency_arb/
+│
+├── signal_processing.py      # Core signal detection logic
+├── pnl_simulation.py         # (Planned) PnL backtesting logic
+├── data/                     # Quote data (not included in repo)
