@@ -1,0 +1,44 @@
+# macOS system files
+.DS_Store
+
+# Virtual environments
+.venv/
+ven/
+env/
+
+# Autogluon models
+AutogluonModels/
+
+# Kaggle-related files
+Kaggle/
+
+# LeetCode-related files
+LeetCode/
+
+# OOP tutorial files
+OOP_tutorial/
+
+# Strat Analytics folder
+Strat Analytics/
+
+# Archive folder
+archive/
+
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Requirements file (if you don't want to track it)
+requirements.txt
+
+# TWS API folder
+twsapi_macunix.1026.03/
+
+# Ignore all parent directories
+../
+
+# Ignore all data files
+*.csv
+*.gz
+*.tar
