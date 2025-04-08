@@ -136,7 +136,7 @@ def process_signals(df, threshold=50, latency=10, transaction_fee=50):
                 return {
                     key: [
                         signal_end - signal_start,
-                        current_price + stale_price,
+                        current_price + stale_price - transaction_fee/100,
                         sum_q,
                         stale_exchange,
                     ]
